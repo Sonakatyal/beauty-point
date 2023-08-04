@@ -1,11 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <h1>home page</h1>
+    <!--header start-->
+    <div class="top-bar">
+        <h1>Beauty Point Parlour & Academy by AK</h1>
+    </div>
+    <!--header end-->
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-md navbar-dark" id="main-bar"" >
+        <div class=" container-fluid">
+        <a href="" class="navbar-brand"><!--navbar brand class used for comapny name-->
+            <img src="../image/parlour.jpeg" class="navlogo rounded-circle">
+            <img src="../image/parlour.jpeg" class="mobilelogo rounded-circle">
+        </a>
+        <!--mobile view ke liye drop down banne ka-->
+        <button class="navbar-toggler" data-bs-target="#a" data-bs-toggle="collapse"><!--icons ka design banta hai-->
+            <span class="navbar-toggler-icon"><!--isse drop down icon aata hai-->
+            </span>
+        </button>
+        <!--menu start-->
+        <div class="navbar-collapse collapse" id="a"><!--navbar collapse se close krna open krna -->
+            <ul class="navbar-nav text-center ms-auto mt-4"><!--add auto margins to flex items ms auto-->
+                <li class="nav-item"><a href="" class="nav-link">HOME</a></li><!--navlink se text decoration hatyga-->
+                <li class="nav-item"><a href="" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="" class="nav-link">BRANDS</a></li>
+                <li class="nav-item"><a href="" class="nav-link">CONTACTS</a></li>
+                <li class="nav-item"><a href="" class="nav-link">CAREERS</a></li>
+            </ul>
+        </div>
+        </div><!--container fluid end-->
+    </nav>
+    <!--navbar end-->
+    <!--Slider div start-->
+    <div class="carousel slide" data-bs-ride="carousel" id="a">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#a" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#a" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#a" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#a" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="../image/bg.jpg" class="w-100" alt="..">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Pamper yourself with us </h1>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/bg-9.jpg" class="w-100" alt="..">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Peace, Love and Great nails! </h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/bg6.jpg" class="w-100" alt="..">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Self-care is not Selfish</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/bg8.jpg" class="w-100" alt="..">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Make Time for Yourself </h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#a" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#a" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!--slider div end-->
+     <!--banner1 start-->
+     <div class="container-fluid">
+        <div class="container">
+            <h1 class="heading text-center ml-1">Customers are Like <b style="color: #cd0909ca">GOD</b></h1>
+            <br>
+            <div class="row">
+                <div class="col-md-7">
+                    <p class="b">We family of BEAUTY POINT PARLOUR & ACADEMY BY AK welcomes you all in our Beauty Paradise! Step into a world of pampering and relaxation. Our team of skilled professionals is ready to make you look and feel your absolutr best.Take a moment to explore our wide range of services, from soothing facials to glamorous makeovers. if you have any questions or need assistance, don't hesitate to reach out to us. We can't wait to serve you and make your beauty dreams a reality! We believe in customers are the boss, customers are like god and their reviews are like blessings fo us. </p>
+                    <center>
+                        <button class="btn btn-lg" style="background-color:#cd0909ca; color: white; margin-top: 30px;">
+                            JOIN THE JOURNEY
+                        </button>
+                    </center>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="../image/makeup.jpg" class="img123 shadow-lg img-fluid">
+                </div>
+            </div>
+        </div><!--container end-->
+    </div>
+    <!--banner1 end-->
+    <!--our services start-->
+    <div class="container-fluid b1 mt-4">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5 top">
+                <h2 style="font-size: 45px;">Our <b style="color:#cd0909ca;font-size: 45px;">Popular Services</b></h2>
+            </div><!--col-md-12 end-->
+        </div>
+        <div class="container mt-5 text-center">
+            <div class="row">
+                <div class="col-md-3" style="visibility: visible;animation-delay: 0.5s;animation-name: fadeInUp;">
+                    <div class="card shadow-lg">
+                        <div class="overflow-hidden">
+                        <img src="../image/facial.jpg" class="img-fluid w-100"></div>
+                        <div class="card-body">
+                            <h5> Variety of Skin care Facials</h5>
+                            <a href="" class="btn mt-4" style="background-color:#cd0909ca; color: white;">Read More</a>
+                        </div><!--card body end-->
+                    </div><!--card end-->
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-lg">
+                        <div class="overflow-hidden">
+                        <img src="../image/hair.jpg" class="img-fluid w-100"></div>
+                        <div class="card-body">
+                            <h5>Hair Care</h5>
+                            <a href="" class="btn mt-4" style="background-color:#cd0909ca; color: white;">Read More</a>
+                        </div><!--card body end-->
+                    </div><!--card end-->
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-lg">
+                        <div class="overflow-hidden">
+                        <img src="../image/manicure.jpg" class="img-fluid w-100"></div>
+                        <div class="card-body">
+                            <h5>Relaxing Manicure & Pedicure</h5>
+                            <a href="" class="btn mt-4" style="background-color:#cd0909ca; color: white;">Read More</a>
+                        </div><!--card body end-->
+                    </div><!--card end-->
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-lg">
+                        <div class="overflow-hidden">
+                        <img src="../image/bridal.jpg" class="img-fluid w-100"></div>
+                        <div class="card-body">
+                            <h5>Bridal Makeup</h5>
+                            <a href="" class="btn mt-4" style="background-color:#cd0909ca; color: white;">Read More</a>
+                        </div><!--card body end-->
+                    </div><!--card end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--our services end-->
+    <!--banner 2 start-->
+    <div class="container-fluid mt-4">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-5 text-center" style="margin-top: 150px;">
+                    <img src="../image/front.png"
+                        class="img-fluid shadow-lg" style="height: 400px; max-width: 100%;">
+                       
+                </div>
+                <div class="col-md-7" style="margin-top: 110px;">
+                    <h1 class=" ml-1" style="font-size: 45px; margin-top: 40px;">Gift Card for You loved ones!!</h1>
+                    <p class="b">We have an amazing idea for a thoughtful and relaxing gift for your loved ones! Surprise your loved ones with the gift of relaxation and beauty! Treat them to a luxurious salon experience with our gift cards pampering awaits- "They;ll love it"!</p>
+
+                    <a href="" class="btn gift"style="margin-top: 75px;">BUY NOW</a>
+                    <p>*Terms and Conditions Apply</p>
+                    
+                </div>
+            </div>
+        </div><!--container end-->
+    </div><!--container-fluid end-->
+    <!--banner 2 end-->
+    <!--footer start-->
+     <footer>
+        <div class="container-fluid" style="margin-top: 75px; background: #cd0909ca;">
+            <div class="row">
+                <div class="col-md-5 text-center mt-4">
+                    <img src="../image/parlour.jpeg" class="rounded-circle" style="width: 50%; margin-top: 30px; ">
+                    <br><br>
+                </div>
+                <div class="col-md-7 mt-4">
+                    <h2>CONTACT US</h2>
+                    <p class="fp">Feel free to get in touch with our beauty salon to book an appointment or ask any questions you may have. We value your feedback and strive to provide exceptional services to make you feel fabulous and confident.</p>
+                    <div class="row mt-5">
+                        <div class="col-md-6 foot">
+                            <h3>Address</h3>
+                            <p class="fp">Ram khui street, Nai Sadak, Lashkar Gwalior (MP)474001</p>
+                        </div>
+                        <div class="col-md-6 foot">
+                            <h3>Enquiry</h3>
+                            <p class="fp">Mobile: +91-7000404992<br>Email: beautypoint67@gmail.com</p>
+                        </div>
+                    </div> 
+                    <div class="row mt-5">
+                        <div class="col-md-6 foot">
+                            <h3>Assistant Enquiry</h3>
+                            <p class="fp">Mobile: +91 9313663486<br>Email: beautypoint@asistant.com</p>
+                        </div>
+                        <div class="col-md-6 foot">
+                            <h3>Other Enquiry</h3>
+                            <p class="fp">Email: customercare@beautypoint.com</p>
+                        </div>
+                    </div>    
+                    <div class="social-icons text-left">
+                        <i class="bi bi-facebook" style="color: white; font-size: 50px;padding:5px;" ></i>
+                        <i class="bi bi-instagram" style="color: white;font-size: 50px; padding:10px;"></i>
+                        <i class="bi bi-twitter" style="color: white;font-size: 50px;padding:10px;"></i>
+                        <i class="bi bi-linkedin" style="color: white;font-size: 50px;padding:10px;"></i>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+   
+
+
 </body>
+
 </html>
