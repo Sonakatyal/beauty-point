@@ -1,11 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <style>
+        .hj {
+            background-color: #cd0909ca;
+        }
+
+        .sz {
+            font-size: 17px;
+        }
+
+        .btn-sm-square {
+            font-size: 30px;
+            display: flex;
+        }
+
+        .hh {
+            display: flex;
+        }
+
+        .navlogo {
+            height: 70px;
+            transition: all 1s;
+        }
+
+        .navlogo:hover {
+            height: 80px;
+        }
+
+        .mobilelogo {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            navbar {
+                display: block;
+                position: relative;
+                padding: 15px 20px;
+            }
+
+            navbar-nav a:hover {
+                color: black;
+            }
+        }
+
+        .ss {
+            background-color: #cc2121b0;
+        }
+
+        .text {
+            color: white;
+        }
+
+        .navbar-nav a {
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: bold;
+            padding-bottom: 1.5rem;
+        }
+
+        .navbar-nav a:hover {
+            color: black;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!--top bar start-->
+    <div class="container-fluid hj px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light sz">
+                        <i class="fa-solid fa-location-dot me-2" style="color: white;"></i>Nai Sadak,
+                        Lashkar,Gwalior(MP)
+                    </small>
+                    <small class="me-3 text-light sz">
+                        <i class="fa-solid fa-phone me-2" style="color: white;"></i>+91-7000404992
+                    </small>
+                    <small class="text-light sz">
+                        <i class="fa-solid fa-envelope me-2" style="color: white;"></i>artikatyal2002@gmail.com
+                    </small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--top bar end-->
+    <!--navbar start-->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg ss px-4 px-lg-5 py-3 py-lg-0">
+            <a class="navbar-brand p-0">
+                <h1 class="text">
+                    <img src="../image/parlour.jpeg" class="navlogo rounded-circle">Beauty Point Parlour & Academy by AK
+                    <img src="../image/parlour.jpeg" class="mobilelogo rounded-circle">
+                </h1>
+            </a>
+            <button class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"><!--isse drop down icon aata hai-->
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav text-center ms-auto mt-4 py-0">
+                    <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+                    <!--navlink se text decoration hatyga-->
+                    <li class="nav-item"><a href="" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">BRANDS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">CONTACTS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">CAREERS</a></li>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--navbar end-->
+    <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="cards-wrapper">
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/facial.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5> Variety of Skin care Facials</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/hair.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Hair Care</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/manicure.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Relaxing Manicure & Pedicure</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/hair.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Hair Care</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                </div>
+            </div><!--slide2 start-->
+            <div class="carousel-item">
+                <div class="cards-wrapper">
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/cutting.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5> Variety of Skin care Facials</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/facepack.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Hair Care</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/facial2.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Relaxing Manicure & Pedicure</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/hair.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Hair Care</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                </div>
+            </div><!--slide3 start-->
+            <div class="carousel-item active">
+                <div class="cards-wrapper">
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/facial.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5> Variety of Skin care Facials</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/hair.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Hair Care</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/manicure.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Relaxing Manicure & Pedicure</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-lg sl">
+                            <div class="overflow-hidden">
+                                <div class="image-wrapper">
+                                    <img src="../image/hair.jpg" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5>Hair Care</h5>
+                                <a href="" class="btn mt-4 read">Read More</a>
+                            </div><!--card body end-->
+                        </div><!--card end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--for mobile viw cards -->
+    <div id="carouselExampleIndicatorsSmallScreen" class="carousel slide d-none d-sm-block d-lg-none" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/facial.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5> Variety of Skin care Facials</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-lg sl">
+                <div class="overflow-hidden">
+                    <div class="image-wrapper">
+                        <img src="../image/hair.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>Hair Care</h5>
+                    <a href="" class="btn mt-4 read">Read More</a>
+                </div><!--card body end-->
+            </div><!--card end-->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
 </body>
+
 </html>
