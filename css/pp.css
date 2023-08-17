@@ -227,7 +227,6 @@
 }
 .for{
     margin-top: 100px;
-    margin-left: 100px;
     box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
     background-color: rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -277,6 +276,84 @@
     height: 100vh;
     margin-top: 20px;
     background-repeat: no-repeat;
+}
+.social{
+    display: flex;
+}
+.button1 button{
+    height: 26px;
+    background: #3b5998;
+    width: 79px;
+    padding-top: 2px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 37px;
+    margin-top: 32px;
+    margin-left: 132px;
+    font-size: 14px;
+}
+.head8{
+    background: url(../image/career2.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    background-repeat: no-repeat;
+}
+.bhj{
+    font-family: 'prague';
+    font-size: 75px;
+    color: white;
+    font-weight: 500;
+    margin-top: 200px;
+}
+.full{
+    background: url(../image/want.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+    
+}
+.full1{
+    font-family: 'prague';
+    font-size: 50px;
+    color: black;
+    font-weight: 500;
+    margin-top: 250px;
+}
+.head9{
+    background: url(../image/career.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    background-repeat: no-repeat;
+}
+.head10{
+    background: url(../image/want.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+}
+.locate iframe{
+    width: 100%;
+    height: 500px;
+}
+.bor{
+    border-style: 5px solid red;
+    
 }
 
 
